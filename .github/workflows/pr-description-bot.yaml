@@ -3,6 +3,9 @@ name: PR Description Bot
 on:
   pull_request:
     types: [opened, synchronize]
+    
+permissions:
+  pull-requests: write  # 👈 REQUIRED to comment on PRs
 
 jobs:
   summarize:
