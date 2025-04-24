@@ -3,7 +3,7 @@ name: PR Description Bot
 on:
   pull_request:
     types: [opened, synchronize]
-    
+
 permissions:
   pull-requests: write  # 👈 REQUIRED to comment on PRs
 
@@ -36,4 +36,4 @@ jobs:
         uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{ github.event.pull_request.number }}
-          body: pr_description.txt
+          body-path: pr_description.txt
