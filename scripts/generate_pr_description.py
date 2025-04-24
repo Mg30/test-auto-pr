@@ -29,7 +29,7 @@ Keep it short but informative, suitable for reviewers.
 """
 
 response = completion(
-    model="gpt-4o",
+    model=MODEL,
     messages=[{"role": "user", "content": prompt}],
     temperature=0.3,
 )
